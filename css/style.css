@@ -1,0 +1,480 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    background: url(../img/bg.png);
+    /* height: 757px; */
+    background-size: cover;
+
+}
+
+
+
+.phone-number {
+
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 7px;
+    border-bottom: 3px solid #ff8cbc;
+    transition: all 0.25s linear;
+    position: relative;
+}
+
+.phone-number:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #61a3ff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* this is to match where the border is */
+    transform-origin: left;
+    transform: scale(0);
+    transition: 0.25s linear;
+    /*   will-change: transform; */
+}
+
+.phone-number:hover:before {
+    transform: scale(1);
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.menu__item a {
+    padding-top: 0;
+}
+
+.info {
+    margin-top: 120px;
+}
+
+.info h4 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.info h1 {
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.info p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.info button {
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
+}
+
+.truck img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+.steps {
+    border: 2px solid #EFF5F8;
+    background: #FEFEFE;
+    padding: 60px 15px;
+    border-radius: 6px;
+    margin-top: 50px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.steps h2 {
+    color: #EFF5F8;
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.steps h5 {
+    color: #333333;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.steps p {
+    color: #333333;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.header-end {
+    margin-bottom: 180px;
+}
+
+
+.advantages {
+    background: url(../img/about-us-bg.png);
+    background-size: cover;
+    padding-top: 150px;
+
+}
+
+.advantages h2 {
+    margin-bottom: 150px;
+
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.advantages__items {
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+.advantages__items h4 {
+    font-style: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+section p {
+    text-align: center;
+    font-style: 16px;
+
+}
+
+.order {
+    background-color: #F8F8F8;
+    margin-top: -31px;
+
+}
+
+.order h2 {
+    padding-top: 90px;
+}
+
+.order_check {
+    margin-top: 50px;
+}
+
+.order__form{
+    padding-top: 80px;
+}
+
+.order__form button {
+    margin-bottom: 20px;
+}
+
+.order__form input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+}
+
+.order__text {
+    font-size: 12px;
+
+}
+
+.chose {
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+footer {
+    margin-top: -5px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background-color: #333333;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__items {
+    margin-top: 30px;
+
+
+}
+
+.footer__items a,
+img,
+button {
+    color: white;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 5px;
+
+}
+
+.policy {
+    font-size: 12px;
+}
+
+.footer__items img {
+    margin-bottom: 30px;
+    margin-top: -35px;
+}
+
+.footer__items button {
+    margin-top: 10px;
+}
+
+.btn {
+    transition: all 500ms ease;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #1786fe;
+    box-shadow: inset 0 0 0 2px #1786fe;
+}
+
+.inner-img {
+    transition: 0.3s;
+}
+
+.inner-img:hover {
+    transform: scale(1.1);
+}
+
+.parallax-img {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* -------------- Callback -------------- */
+
+#popup__toggle {
+    bottom: 50px;
+    right: 125px;
+    position: fixed;
+    z-index: 999;
+}
+
+.circlephone {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    border: 2px solid rgba(40, 52, 191, 0.9);
+    width: 130px;
+    height: 130px;
+    bottom: -23px;
+    right: 7px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    opacity: .5;
+    -webkit-animation: circle-anim 2.4s infinite ease-in-out !important;
+    -moz-animation: circle-anim 2.4s infinite ease-in-out !important;
+    -ms-animation: circle-anim 2.4s infinite ease-in-out !important;
+    -o-animation: circle-anim 2.4s infinite ease-in-out !important;
+    animation: circle-anim 2.4s infinite ease-in-out !important;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all 0.5s;
+}
+
+@keyframes circle-anim {
+    0% {
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+        opacity: .1;
+    }
+
+    30% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .5;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .1;
+    }
+}
+
+.circle-fill {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    background-color: rgb(61, 155, 233, 0.8);
+    width: 90px;
+    height: 90px;
+    bottom: -1px;
+    right: 29px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -moz-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -ms-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -o-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all 0.5s;
+}
+
+@keyframes circle-fill-anim {
+    0% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .2;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+}
+
+.img-circle {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    height: 60px;
+    bottom: 14px;
+    right: 44px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    opacity: .7;
+}
+
+.img-circle {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: rgba(61, 155, 233, 0.8);
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+.img-circleblock {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    width: 60px;
+    height: 53px;
+    background-image: url(../img/phone.svg);
+    background-position: center center;
+    position: relative;
+    right: 2px;
+    background-repeat: no-repeat;
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+    0% {
+        transform: rotate(-8deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(-8deg);
+    }
+}
+
+.tem {
+    position: relative;
+    left: 79px;
+    bottom: 34px;
+    width: 100px;
+    line-height: 15px;
+    text-align: left;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* Media */
+
+@media all and (max-width: 982px){
+    .order__form{
+        margin: 0 auto 70px;
+        padding-top: 0px;
+    }
+}
+
+@media all and (max-width: 653px) {
+    .steps {
+        width: 70vw;
+        margin: 30px 50px;
+    }
+}
+
+/* Callback Media */
+@media only screen and (max-width: 690px) {
+    #popup__toggle {
+        right: 81px;
+    }
+
+    .circlephone {
+        width: 105px;
+        height: 105px;
+        right: 21px;
+        bottom: -11px;
+    }
+
+    .img-circle {
+        height: 60px;
+        bottom: 11px;
+        right: 42px;
+        width: 62px;
+        border-radius: 100%;
+        border: 2px solid transparent;
+        opacity: .7;
+    }
+
+    /* .img-circleblock {
+        width: 44px;
+        height: 30px;
+        top: 8px;
+    } */
+
+    .tem {
+        left: 55px;
+        bottom: 8px;
+        height: 24px;
+        bottom: 14px;
+    }
+}
+
+/* end of popup phone */
